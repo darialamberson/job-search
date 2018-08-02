@@ -1,9 +1,8 @@
 import DS from 'ember-data';
 
-const { attr, belongsTo } = DS;
-
 export default DS.Model.extend({
-  name: attr('string'),
-  // ...
-  // attr('date')
+  name: DS.attr('string'),
+  rank: DS.attr('number'),
+  isActive: DS.attr('boolean'),
+  isDeleted: DS.attr('boolean')
 });

@@ -8,6 +8,10 @@ const Router = EmberRouter.extend({
 
 Router.map(function() {
   this.route('home');
+  this.route('stage');
+  this.route('listing');
+  this.route('external-link');
+  this.route('status');
 });
 
 export default Router;

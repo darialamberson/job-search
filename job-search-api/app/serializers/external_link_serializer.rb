@@ -1,3 +1,4 @@
 class ExternalLinkSerializer < ActiveModel::Serializer
-  attributes :id
+  attributes :id, :url, :description
+  belongs_to :listing
 end

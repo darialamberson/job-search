@@ -1,9 +1,7 @@
 import DS from 'ember-data';
 
-const { attr, belongsTo } = DS;
-
 export default DS.Model.extend({
-  name: attr('string'),
-  // ...
-  // attr('date')
+  url: DS.attr('string'),
+  description: DS.attr('string'),
+  listing: DS.belongsTo('listing')
 });
