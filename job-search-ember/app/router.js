@@ -7,9 +7,8 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
-  this.route('home');
   this.route('stage');
-  this.route('listing');
+  this.route('listing', { path: '/home' }, function() {
   this.route('external-link');
   this.route('status');
 });
